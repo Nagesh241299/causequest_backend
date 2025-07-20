@@ -9,6 +9,9 @@
     "lint:fix": "eslint --no-error-on-unmatched-pattern --fix .",
     "tsc-watch": "tsc --w",
     "tsc": "tsc",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "nodemon src/server.ts"
     "dev": "cross-env NODE_ENV=development nodemon dist/server",
     "start": "cross-env NODE_ENV=development node dist/server",
     "dev-migrate-up": "cross-env NODE_ENV=development sequelize db:migrate",
